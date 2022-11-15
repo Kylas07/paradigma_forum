@@ -1,0 +1,333 @@
+:root {
+    --fondforum: #0F0A0A;
+    --maincolo1:#1624B6;
+    --maincolo2:#F3C72B;
+    --beast-colo:#1624B6;
+    --colofont:rgba(245, 245, 245, 1);
+    --coloaccent:#5263F4;
+    --fondbleu:url('https://i.imgur.com/Qho21zU.jpg');
+    --foncate:url('https://i.imgur.com/g9QikTJ.png');
+    --color-rank-1:RGBA(113,101,80,0.19);
+    --color-rank-2:RGBA(113,200,80,0.19);
+    --color-rank-3:RGBA(97,146,209,0.58);
+    --color-rank-4:rgb(0,0,0);
+    --color-rank-5:rgb(255,0,0);
+    --color-rank-6:rgb(0,255,0);
+    --color-rank-7:rgb(0,0,255);
+    --color-rank-8:rgb(0,0,0);
+    --color-rank-9:rgb(255,0,0);
+    --color-rank-10:rgb(0,255,0);
+  }
+  
+  
+  .para_bestiaire {
+    background: var(--foncate);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: bottom;
+        margin: 0px auto;
+      min-width: 1000px;
+        max-width: 1400px;
+      outline: solid 1px #b1d0e050;
+      outline-offset: -20px;
+      display: flex;
+    border-radius:5px;
+        height:98vh;
+  }
+  
+  .notransition {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -o-transition: none !important;
+    transition: none !important;
+  }
+  
+  .conteneur_index {
+      height: 100%;
+      width: 55%;
+      display: inline-flex;
+      padding: 40px;
+  }
+    
+  /************
+  button{
+    padding:0;
+    border:0;
+    background:none;
+    display:flex;
+    align-items:center;
+      margin-bottom: 20px;
+  }
+  
+  **********/
+  
+  .onglet_index {
+    width: 100%;
+  }
+  
+  div.onglet_index ol {
+  justify-content: space-evenly;
+    list-style-type: none;
+      padding: 5px;
+  margin-top: 10px;
+      margin-bottom: 10px;
+    display:flex;
+    align-items:center;
+    width:100%;
+  }
+  
+  ol span.dangerosite_bestiaire {
+      font-family: 'lato';
+      font-size: 30px;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: var(--fondforum);
+      margin-right: 10px;
+      padding: 5px 20px;
+      background:green;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      height: 50px;
+  }
+  
+  span.rank_bestiaire {
+    position: absolute;
+      margin-left: -260px;
+  }
+  
+  
+      .contentClass {
+        padding-right:10%;
+          transition:all ease-in 1s;
+        
+      }
+  
+  button.linkClass {
+    transition:0.5s ease;
+  }
+  
+  button.linkClass.active {
+    background:black;
+    transition:0.5s ease;
+  }
+  
+  button.linkClass:hover {
+   transform:scale(1.15);
+    transition:0.5s ease;
+  }
+  
+  
+  
+  div.onglet_index ol li {
+    margin-right:10px;
+      transition: max-width ease-out 0.4s;
+  }
+  
+  div.onglet_index ol button.linkClass {
+    height: 110px;
+      width: 110px;
+      padding: 5px;
+      border: 5px solid rgb(0 0 0 / 60%);
+  }
+  
+  div.onglet_index ol button.linkClass img{
+        height: 100%;
+      width: 100%;
+      object-fit: cover;
+      filter:grayscale(1);
+  }
+  
+  div.onglet_index ol button.linkClass.active img{
+    filter:grayscale(0);
+  }
+  
+  
+  
+  
+  .conteneur_annexe {
+      padding: 55px 55px 0px 55px;
+      font-size: 14px;
+      line-height: 160%;
+      text-align: justify;
+      font-family: 'Lato';
+        background: #46565e50;
+    backdrop-filter: blur(6px);
+    border: solid 1px #b1d0e050;
+    overflow: hidden;
+  }
+  
+  .onglet_contenu {
+    color: white;
+      transition: all ease-in-out .5s;
+      -moz-transition: all ease-in-out .5s;
+      -webkit-transition: all ease-in-out .5s;
+      height: 80%;
+      overflow: auto;
+        background: #0004;
+    border-radius: 5px;
+    padding:50px;
+    -webkit-box-shadow: 0 4px 8px #0003;
+    box-shadow: 0 4px 8px #0003;
+  }
+  
+  .img_bestiaire {
+    display:flex;
+  }
+  
+  .info_bestiaire {
+    margin-left:10px;
+    margin-top:10px;
+  }
+  
+  .info_bestiaire li {
+  margin-left:20px;
+    margin-bottom:10px;
+    list-style-type: none;
+  }
+  
+  .img_bestiaire img {
+    height: 300px;
+      width: 200px;
+    object-fit:cover;
+  padding:10px;
+  
+  }
+  
+  span.bestiaire_tl {
+    padding: 2px 8px;
+    font-size:30px;
+  text-transform:uppercase;
+    font-weight:700;
+    font-family:'playfair display';
+  }
+
+  infob { 
+      padding: 2px 8px;
+  
+      font-weight: 700;
+      text-transform: uppercase;
+      color: var(--fondforum);
+      width: 100px;
+    }
+
+#buttons-container {
+  max-height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  overflow: auto;
+    margin-right: 10px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.monster_button {
+    margin: 5px;
+    padding: 0px!important;
+    grid-row: 1/5;
+    cursor: pointer;
+    border-radius:5px;
+}
+
+div#buttons-container div {
+    background: rgba(0, 0, 0, 0.267);
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: rgb(0 0 0 / 20%) 0px 4px 8px;
+}
+
+div#buttons-container div:hover {
+    filter: grayscale(0)!important;
+  transition:1s ease;
+}
+
+.monster_button:active {
+    filter: grayscale(0);
+    transform: scale(1.2);
+}
+
+.button_img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    
+}
+
+.conteneur_annexe {
+    width: 50%;
+}
+
+.conteneur_index {
+    width: 50%;
+}
+
+#left-panel {
+display: grid;
+    width: 100%;
+    align-self: flex-start;
+    backdrop-filter: blur(6px);
+    border: solid 1px #26262650;
+    padding: 25px;
+    border-radius: 10px;
+  background: rgba(16 18 27 / 40%);
+}
+
+#monster-filters{
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+  height:30px;
+}
+
+input.tri_filtre {
+color: white;
+    background: rgba(0, 0, 0, 0.267)!important;
+    margin-right: 5px!important;
+}
+
+
+select#filtre {
+  
+  
+}
+
+
+
+
+.button_separator {
+height: 50px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'lato';
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--coloaccent);
+    margin-right: 10px;
+    padding: 5px 20px;
+    background: #0004;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 4px 8px #0003;
+    box-shadow: 0 4px 8px #0003;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+div#monster-desc {
+  overflow: auto;
+    max-height: 20vh;
+    padding: 0 10px;
+    width: 100%;
+}
+
+infob {
+    padding: 2px 8px;
+
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+    width: 100px;
+}
