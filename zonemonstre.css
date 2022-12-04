@@ -17,7 +17,7 @@ overflow: hidden;
   color:var(--forumfond);
 }
 
-.show {
+.balise_show {
   display: block;
 }
 
