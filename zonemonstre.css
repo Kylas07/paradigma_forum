@@ -1,0 +1,115 @@
+.container_zone {
+overflow: hidden;
+    margin-top: 35px;
+    display: grid;
+  grid-gap:10px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.zone_monstre {
+    float: left;
+    color: #ffffff;
+    width: 100%;
+    text-align: center;
+    margin: 2px;
+  font-family:"lato";
+  display:none;
+  color:var(--forumfond);
+}
+
+.show {
+  display: block;
+}
+
+.zone-btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: rgba(175 156 255 / 0.1);
+    color: var(--colofont);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.zone-btn:hover {
+  background-color: rgba(175 156 255 / 0.2);
+  transition:1s ease;
+}
+
+.zone-btn.active {
+  background-color: black;
+  text-decoration:underline;
+    transition:1s ease;
+}
+
+stremon {
+  border: 0px;
+    width: 220px;
+background: linear-gradient(270deg, rgba(175 156 255 / 0.1) 8.53%, var(--type) 74.41%);
+  border-radius:5px;
+    height: 120px;
+    display: flex;
+    position: relative;
+}
+
+stremon img {
+  height: 120px;
+    width: 80px;
+  border-radius: 5px 0 0 5px;
+    object-fit: cover;
+}
+
+stremon_info {
+  width: 100%;
+    padding: 15px;
+    justify-items: start;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+}
+
+stremon_info > span {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+appelation {
+    text-align: right;
+    font-size: 15px;
+    position: relative;
+    text-transform: uppercase;
+    font-family: 'lato';
+    font-weight: 700;
+}
+info_stremon {
+      display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 5px;
+    width: 100%;
+    border-radius: 4px;
+    border: none;
+}
+
+info_stremon  > span:first-of-type {
+text-transform: lowercase;
+    background: rgb(0 0 0 / 63%);
+    display: flex;
+    height: 100%;
+    color: var(--type);
+    align-items: center;
+    place-content: center;
+    border-radius: 10px;
+}
+
+info_stremon  > span:nth-of-type(2) {
+  font-style:italic;
+  text-transform: lowercase;
+    background: var(--type);
+    display: flex;
+    height: 100%;
+    color: rgb(0 0 0 / 63%);
+    align-items: center;
+    place-content: center;
+    border-radius: 10px;
+}
