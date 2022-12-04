@@ -1,333 +1,104 @@
-:root {
-    --fondforum: #0F0A0A;
-    --maincolo1:#1624B6;
-    --maincolo2:#F3C72B;
-    --beast-colo:#1624B6;
-    --colofont:rgba(245, 245, 245, 1);
-    --coloaccent:#5263F4;
-    --fondbleu:url('https://i.imgur.com/Qho21zU.jpg');
-    --foncate:url('https://i.imgur.com/g9QikTJ.png');
-    --color-rank-1:RGBA(113,101,80,0.19);
-    --color-rank-2:RGBA(113,200,80,0.19);
-    --color-rank-3:RGBA(97,146,209,0.58);
-    --color-rank-4:rgb(0,0,0);
-    --color-rank-5:rgb(255,0,0);
-    --color-rank-6:rgb(0,255,0);
-    --color-rank-7:rgb(0,0,255);
-    --color-rank-8:rgb(0,0,0);
-    --color-rank-9:rgb(255,0,0);
-    --color-rank-10:rgb(0,255,0);
-  }
-  
-  
-  .para_bestiaire {
-    background: var(--foncate);
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: bottom;
-        margin: 0px auto;
-      min-width: 1000px;
-        max-width: 1400px;
-      outline: solid 1px #b1d0e050;
-      outline-offset: -20px;
-      display: flex;
-    border-radius:5px;
-        height:98vh;
-  }
-  
-  .notransition {
-    -webkit-transition: none !important;
-    -moz-transition: none !important;
-    -o-transition: none !important;
-    transition: none !important;
-  }
-  
-  .conteneur_index {
-      height: 100%;
-      width: 55%;
-      display: inline-flex;
-      padding: 40px;
-  }
-    
-  /************
-  button{
-    padding:0;
-    border:0;
-    background:none;
-    display:flex;
-    align-items:center;
-      margin-bottom: 20px;
-  }
-  
-  **********/
-  
-  .onglet_index {
-    width: 100%;
-  }
-  
-  div.onglet_index ol {
-  justify-content: space-evenly;
-    list-style-type: none;
-      padding: 5px;
-  margin-top: 10px;
-      margin-bottom: 10px;
-    display:flex;
-    align-items:center;
-    width:100%;
-  }
-  
-  ol span.dangerosite_bestiaire {
-      font-family: 'lato';
-      font-size: 30px;
-      text-transform: uppercase;
-      font-weight: 600;
-      color: var(--fondforum);
-      margin-right: 10px;
-      padding: 5px 20px;
-      background:green;
-      width: 100%;
-      display: flex;
-      align-items: center;
-      height: 50px;
-  }
-  
-  span.rank_bestiaire {
-    position: absolute;
-      margin-left: -260px;
-  }
-  
-  
-      .contentClass {
-        padding-right:10%;
-          transition:all ease-in 1s;
-        
-      }
-  
-  button.linkClass {
-    transition:0.5s ease;
-  }
-  
-  button.linkClass.active {
-    background:black;
-    transition:0.5s ease;
-  }
-  
-  button.linkClass:hover {
-   transform:scale(1.15);
-    transition:0.5s ease;
-  }
-  
-  
-  
-  div.onglet_index ol li {
-    margin-right:10px;
-      transition: max-width ease-out 0.4s;
-  }
-  
-  div.onglet_index ol button.linkClass {
-    height: 110px;
-      width: 110px;
-      padding: 5px;
-      border: 5px solid rgb(0 0 0 / 60%);
-  }
-  
-  div.onglet_index ol button.linkClass img{
-        height: 100%;
-      width: 100%;
-      object-fit: cover;
-      filter:grayscale(1);
-  }
-  
-  div.onglet_index ol button.linkClass.active img{
-    filter:grayscale(0);
-  }
-  
-  
-  
-  
-  .conteneur_annexe {
-      padding: 55px 55px 0px 55px;
-      font-size: 14px;
-      line-height: 160%;
-      text-align: justify;
-      font-family: 'Lato';
-        background: #46565e50;
-    backdrop-filter: blur(6px);
-    border: solid 1px #b1d0e050;
-    overflow: hidden;
-  }
-  
-  .onglet_contenu {
-    color: white;
-      transition: all ease-in-out .5s;
-      -moz-transition: all ease-in-out .5s;
-      -webkit-transition: all ease-in-out .5s;
-      height: 80%;
-      overflow: auto;
-        background: #0004;
-    border-radius: 5px;
-    padding:50px;
-    -webkit-box-shadow: 0 4px 8px #0003;
-    box-shadow: 0 4px 8px #0003;
-  }
-  
-  .img_bestiaire {
-    display:flex;
-  }
-  
-  .info_bestiaire {
-    margin-left:10px;
-    margin-top:10px;
-  }
-  
-  .info_bestiaire li {
-  margin-left:20px;
-    margin-bottom:10px;
-    list-style-type: none;
-  }
-  
-  .img_bestiaire img {
-    height: 300px;
-      width: 200px;
-    object-fit:cover;
-  padding:10px;
-  
-  }
-  
-  span.bestiaire_tl {
-    padding: 2px 8px;
-    font-size:30px;
-  text-transform:uppercase;
-    font-weight:700;
-    font-family:'playfair display';
-  }
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="style.css">
+<link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300;1,400&display=swap"
+    rel="stylesheet">
+<!------ header--------->
+<div id="fondforum">
+    <div class="header"></div>
 
-  infob { 
-      padding: 2px 8px;
-  
-      font-weight: 700;
-      text-transform: uppercase;
-      color: var(--fondforum);
-      width: 100px;
-    }
+</div>
+<!--------fin header------->
 
-#buttons-container {
-  max-height: 80vh;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-  overflow: auto;
-    margin-right: 10px;
-    grid-template-columns: repeat(5, 1fr);
-    grid-gap: 10px;
-    grid-auto-rows: minmax(100px, auto);
-}
+<div style="margin-top:800px; position: relative;
+    margin: 20px auto 0px; width: 100%;box-sizing: border-box;top: 0;">
 
-.monster_button {
-    margin: 5px;
-    padding: 0px!important;
-    grid-row: 1/5;
-    cursor: pointer;
-    border-radius:5px;
-}
+    <div class="para_bestiaire">
 
-div#buttons-container div {
-    background: rgba(0, 0, 0, 0.267);
-    border-radius: 5px;
-    padding: 10px;
-    box-shadow: rgb(0 0 0 / 20%) 0px 4px 8px;
-}
+        <section id="conteneur_index" style="width:40%;">
+            <div id="left-panel">
+                <div id="monster-filters">
+                    <input class="tri_filtre" placeholder="Nom du monstre...">
 
-div#buttons-container div:hover {
-    filter: grayscale(0)!important;
-  transition:1s ease;
-}
+                    <select id="filtre" type="text" name="filter">
+                        <option value="1">Alphabétique</option>
+                        <option value="2">Rareté</option>
+                        <option value="3">Dangerosité</option>
+                        <option value="4">Localité</option>
+                        <option value="5">type</option>
+                    </select>
 
-.monster_button:active {
-    filter: grayscale(0);
-    transform: scale(1.2);
-}
+                </div>
+                <div id="buttons-container">
 
-.button_img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    
-}
+                    <!-------button----->
+                    <!-------button----->
 
-.conteneur_annexe {
-    width: 50%;
-}
+                </div>
 
-.conteneur_index {
-    width: 50%;
-}
+            </div>
 
-#left-panel {
-display: grid;
-    width: 100%;
-    align-self: flex-start;
-    backdrop-filter: blur(6px);
-    border: solid 1px #26262650;
-    padding: 25px;
-    border-radius: 10px;
-  background: rgba(16 18 27 / 40%);
-}
+        </section>
+        <section style="width:50%;">
+            <div class="carte_monstre">
 
-#monster-filters{
-    width: 100%;
-    padding: 10px 0;
-    display: flex;
-  height:30px;
-}
+                <div class="img_monstre"><img id="main_image" src="https://i.imgur.com/7IdM3as.jpg"></div>
 
-input.tri_filtre {
-color: white;
-    background: rgba(0, 0, 0, 0.267)!important;
-    margin-right: 5px!important;
-}
+                <div class="ex_monstre">
+                    <div class="nom_monstre">
+                        <h1 id="main_name">Elona</h1>
+                        <h2 id="main_title"> “Le sublime en tout genre”</h2>
+                        <div class="cara_monstre"><span id="main_rarity">épique</span> ; <span id="main_dangerosity">dangerosité</span><br> <span id="main_type">type + type +
+                                type</span></div>
+                    </div>
+                    <div class="spoiler_monstre">
+
+                        <div class="monstre_talent">
+
+                            <input type="checkbox" id="spoiler_monstre"><label for="spoiler_monstre"
+                                title="talent"><span class="ss"
+                                    style="display: inline-block;z-index: 1;padding: 0.2vw;position: relative;overflow: hidden;  cursor: pointer;">afficher</span></label>
+                            <span class="talent" style="color:var(--maincolo2);">(CARACTÉRISTIQUES)</span>
+
+                            <div id="spoiler_talent"> <br>
+                                <div id="main_stats">Force (0) / Résistance (2) / Magie (0) / Résilience (2) / Esprit (3) / Mental (2) /
+                                    Agilité (5)</div>
+                            </div>
+                        </div>
+                        <div class="monstre_talent">
+                            <span>description:</span>
+                            <br><br>
+                            <div id="spoiler_descr">Le sublime en tout genre est le don le plus rare ; avare et volatil,
+                                l’Elona attend sagement ; ses larmes, dont la beauté soigne les pires maux ; jamais
+                                dévoilé, il attend l’Unique qui le dévoilera ; la nature a prévu qu’en nos faibles
+                                esprits, le beau, s’il est commun, doit perdre sa valeur.Le sublime en tout genre est le
+                                don le plus rare ; avare et volatil, l’Elona attend sagement ; ses larmes, dont la
+                                beauté soigne les pires maux ; jamais dévoilé, il attend l’Unique qui le dévoilera ; la
+                                nature a prévu qu’en nos faibles esprits, le beau, s’il est commun, doit perdre sa
+                                valeur.Le sublime en tout genre est le don le plus rare ; avare et volatil, l’Elona
+                                attend sagement ; ses larmes, dont la beauté soigne les pires maux ; jamais dévoilé, il
+                                attend l’Unique qui le dévoilera ; la nature a prévu qu’en nos faibles esprits, le beau,
+                                s’il est commun, doit perdre sa valeur.</div>
 
 
-select#filtre {
-  
-  
-}
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+    </div>
 
 
+</div>
 
-
-.button_separator {
-height: 50px;
-    justify-content: center;
-    align-items: center;
-    font-family: 'lato';
-    font-size: 30px;
-    text-transform: uppercase;
-    font-weight: 600;
-    color: var(--coloaccent);
-    margin-right: 10px;
-    padding: 5px 20px;
-    background: #0004;
-    border-radius: 5px;
-    -webkit-box-shadow: 0 4px 8px #0003;
-    box-shadow: 0 4px 8px #0003;
-    width: 100%;
-    display: flex;
-    align-items: center;
-}
-
-div#monster-desc {
-  overflow: auto;
-    max-height: 20vh;
-    padding: 0 10px;
-    width: 100%;
-}
-
-infob {
-    padding: 2px 8px;
-
-    font-weight: 700;
-    text-transform: uppercase;
-    color: white;
-    width: 100px;
-}
+<script type="text/javascript" src="./index.js"></script>
