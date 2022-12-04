@@ -1,0 +1,372 @@
+:root {
+    --fondforum: #0F0A0A;
+    --maincolo1: #1624B6;
+    --maincolo2: #F3C72B;
+    --colofont: rgba(245, 245, 245, 1);
+    --coloaccent: #5263F4;
+    --fondbleu: url('https://i.imgur.com/Qho21zU.jpg')
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    background-color: rgb(195 195 195 / 0%);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--colofont);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar,
+::-webkit-scrollbar-thumb {
+    border: 5px solid rgb(195 195 195 / 0%);
+}
+
+body {
+    margin: auto;
+    background: var(--fondforum);
+
+}
+
+.para_bestiaire {
+    background: url(https://i.imgur.com/V1QeSwx.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    margin: 0px auto;
+    width: 98vw;
+    font-family: 'Lato';
+    display: flex;
+    color: var(--colofont);
+    font-size: 1vw;
+    border-radius: 5px;
+    height: 98vh;
+}
+
+.para_bestiaire section {
+    height: 100%;
+    display: grid;
+    place-content: center;
+    justify-items: center;
+    padding: 0 2vh;
+}
+
+
+#conteneur_index {
+    height: 100%;
+    display: inline-flex;
+    padding: 40px;
+}
+
+#left-panel {
+    display: grid;
+    width: 100%;
+    height: 84vh;
+    grid-template-rows: 1fr 10fr;
+    align-self: flex-start;
+    backdrop-filter: blur(6px);
+    border: solid 1px #26262650;
+    padding: 25px;
+    border-radius: 10px;
+    background: rgba(16 18 27 / 40%);
+}
+
+#monster-filters {
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+}
+
+input.tri_filtre {
+    color: white;
+    background: var(--fondforum);
+    margin-right: 5px !important;
+}
+
+select {
+    background-color: transparent;
+    border-color: #BCBCBC;
+    border-style: solid;
+    border-width: 0 0 1px;
+    color: rgba(177 177 177);
+    cursor: pointer;
+    font-family: "lato";
+    font-weight: 400;
+    padding: 8px 0 7px;
+    vertical-align: middle;
+}
+
+#buttons-container {
+    max-height: 80vh;
+    width: 100%;
+    display: flex;
+    overflow: auto;
+    flex-flow: wrap;
+    align-content: flex-start;
+    margin-right: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+button.linkClass {
+    transition: 0.5s ease;
+    grid-template-rows: 1fr 1fr;
+    display: grid;
+    min-width: 100px;
+    width: 10vw;
+    height: 8vw;
+    border-radius: 10px;
+}
+
+.monster_button {
+    padding: 0.2vw;
+    border-radius: 10px;
+    cursor: pointer;
+    border: transparent !important;
+    padding: 1vw;
+    background: #1B1B1B;
+}
+
+.button_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.monster_button:hover>.nom_bestiaire_monstre span {
+    display: list-item;
+    margin-left: 1.7vw;
+    transition: 1s ease;
+}
+
+
+
+.nom_bestiaire_monstre {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1vw;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    text-transform: uppercase;
+    color: #F3C72B;
+
+}
+
+.carte_monstre {
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 80vh;
+      width: 45vw;
+    background: rgba(16 18 27 / 40%);
+    backdrop-filter: blur(6px);
+    padding: 10px;
+}
+
+.carte_monstre .img_monstre {
+    height: 80vh;
+grid-column: 1/3;
+}
+
+.carte_monstre .img_monstre img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.ex_monstre {
+    width: 100%;
+    height: 100%;
+    background: rgb(27 27 27 / 78%);
+    border-radius: 0px 10px 10px 0px;
+    display: grid;
+    grid-column: 2/2;
+    position: absolute;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+
+}
+
+.nom_monstre {
+    display: grid;
+    grid-template-rows: 2fr 1fr 1fr;
+    align-items: center;
+}
+
+.nom_monstre h1 {
+    font-family: 'Playfair Display';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 4vw;
+    line-height: 6vw;
+    text-transform: uppercase;
+    color: #F3C72B;
+}
+
+.nom_monstre h2 {
+    font-family: 'Lato';
+    font-style: italic;
+    font-weight: 300;
+    font-size: 1vw;
+    line-height: auto;
+    color: #FFFFFF;
+
+}
+
+.cara_monstre {
+    line-height: 2vw;
+    font-family: 'Lato';
+    font-style: normal;
+    line-height: auto;
+    font-weight: 400;
+    font-size: 1vw;
+    color: var(--colofont);
+}
+
+.cara_monstre span:first-of-type {
+    background: var(--maincolo2);
+    padding: 2px 8px;
+    color: var(--fondforum);
+    border-radius: 2px;
+}
+
+.cara_monstre span:nth-of-type(2) {
+
+    text-transform: lowercase;
+    color: var(--maincolo2);
+
+}
+
+.cara_monstre span:nth-of-type(3) {
+    font-weight: 700;
+}
+
+
+.spoiler_monstre {
+    padding: 0 2vw;
+    height: 100%;
+    display: flex;
+    overflow: auto;
+    place-self: start;
+    flex-direction: column;
+}
+
+.spoiler_monstre div span {
+    font-family: 'Lato';
+    text-align: left;
+    font-weight: 700;
+    font-size: 1vw;
+    color: var(--colofont);
+    text-transform: uppercase;
+}
+
+.monstre_talent {
+    text-align: left;
+}
+
+.monstre_talent span.ss:hover {
+    text-decoration: underline;
+}
+
+.monstre_talent talent {
+    color: var(--colofont);
+    font-size: 1.2vw;
+    margin-left: 1vw;
+}
+
+span.talent {
+    display: inline-block;
+    z-index: 1;
+    padding: 0.2vw;
+    position: relative;
+    overflow: hidden;
+}
+
+span.talent:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 100%;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+#spoiler_talent {
+    height: 0;
+    overflow: hidden;
+    transition: 1s ease;
+
+}
+
+#spoiler_talent div {
+    padding: 10px;
+    text-align: justify;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+input {
+    display: none;
+}
+
+input:checked~#spoiler_talent {
+    height: 7vw;
+    transition: 1s ease;
+}
+
+input:checked~label span {
+    color: transparent !important;
+    margin-left: -5.2vw;
+    transition: 1s ease;
+}
+
+
+input:checked~span.talent {
+    color: var(--fondforum) !important;
+}
+
+input:checked~span.talent:before {
+    content: "";
+    background-color: var(--maincolo2);
+    right: 0%;
+    transition: all 0.3s ease-in-out;
+}
+
+#spoiler_talent div {
+    overflow: auto;
+}
+
+#spoiler_descr {
+    padding: 1vw;
+    height: 18vw;
+    max-height: 25vh;
+    overflow: auto;
+    text-align: justify;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+
+.azer {
+    padding: 10px;
+    background: rgba(16 18 27 / 10%);
+    border-radius: 10px;
+    backdrop-filter: blur(6px);
+}
+
+.nom_bestiaire_monstre {
+    grid-row: 2/2;
+    width: 100%;
+    height: 4vw;
+}
