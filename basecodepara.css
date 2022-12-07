@@ -1,0 +1,239 @@
+
+
+
+:root {
+  --fondforum: #0F0A0A;
+  --maincolo1:#1624B6;
+    --maincolo2:#F3C72B;
+  --colofont:rgba(245, 245, 245, 1);
+  --coloaccent:#5263F4;
+  --fondbleu:url('https://i.imgur.com/Qho21zU.jpg')
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  background-color: rgb(195 195 195 / 0%);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--colofont);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar,
+::-webkit-scrollbar-thumb {
+  border: 5px solid rgb(195 195 195 / 0%);
+}
+
+body {
+  margin:auto;
+  background:var(--fondforum);
+  
+}
+
+#fondforum {
+      width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header {
+  background-image:url('https://i.imgur.com/vWVnTch.jpg');
+  height:100vh;
+width: 100%;
+position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+}
+
+
+#fondforum a {
+font: 10vw 'Playfair Display', serif;
+    position: absolute;
+    margin-top: 5vh;
+  color:var(--maincolo1);
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none;
+    z-index: 99;
+    transition:ease-in-out 1s;
+}
+
+#fondforum a:hover {
+  letter-spacing:20px;
+  transition:ease-in-out 1s;
+}
+
+#fondforum a i {
+  color:var(--maincolo2);
+}
+
+#fondforum .aled i {
+  color: transparent;  
+}
+
+#fondforum .aled {
+-webkit-text-stroke: 1px white;
+  color: transparent;
+  margin-left:18px;
+}
+
+/********** postbody **********/
+#wrapper {
+    position: relative;
+    margin: 20px auto 0px;
+    width: 80%;
+    min-width: 800px;
+  max-width: 1400px;
+  min-height:1000px;
+    box-sizing: border-box;
+    top: 0;
+  background:var(--fondforum);
+}
+
+#innerwrapper {
+  box-sizing: border-box;
+    position: relative;
+}
+
+#para_navig {
+  height: 80px;
+    width: 100%;
+    color: #fff;
+    display: flex;
+  padding:10px;
+    align-items: center;
+    top: 0;
+    z-index: 800;
+}
+
+.navlink {
+  font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 18px;
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: lowercase;
+}
+
+.navlink a {text-decoration:none;
+color:var(--fontcolo);
+margin-left:20px;
+ transition: ease 1s;}
+
+.navlink a:hover {
+  letter-spacing: 2px;
+    text-decoration: underline;
+    transition: ease 1s;
+  color:var(--maincolo2);
+}
+
+.navlink mm {
+  padding:2px 8px;
+  border-radius:5px;
+  background:var(--maincolo1);
+}
+
+/************ fin navig *******************/
+
+.postrow_titre {
+  padding-left:10px;
+  width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    text-transform: lowercase;
+}
+
+.postrow_titre h1 {
+      transition: all ease 1s;
+font-family: 'Lato';
+font-style: italic;
+font-weight: 500;
+font-size: 48px;
+line-height: 58px;
+display: flex;
+align-items: center;
+text-transform: uppercase;
+  color:var(--maincolo1);
+
+}
+
+.postrow_titre h1:hover {
+        transition: all ease 1s;
+  color:var(--maincolo2);
+
+}
+
+
+.postrow_wrap {
+  width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+/******** post body ****************/
+
+.posting_body {
+height: auto;
+    background: #111;
+    position: relative;
+    width: 100%;
+    margin-top: 295px;
+}
+
+.boutons_post{
+    width: 100%;
+      color:var(--colofont);
+    height: 100px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+text-align: center;
+text-transform: uppercase;
+}
+
+.liens_post{
+      color:var(--colofont);
+    height: 70px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.liens_post a {
+  margin-left:5px;
+    color:var(--colofont);
+  text-decoration:none;
+
+}
+
+.body_message {
+  width: 100%;
+    height: auto;
+    margin: 20px auto 80px auto;
+font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 185%;
+text-align: justify;
+  color:black;
+}
