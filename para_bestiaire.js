@@ -15,13 +15,17 @@ const Init = async () => {
     // Récupération de la liste des monstres.
     beasts = await GetBeasts();
     console.log(beasts[0])
-    beasts.forEach(beast => {
-
-        button_container.appendChild(MakeButton(beast));
-    })
-UpdateMainPanel(beasts[0])
+    Sort("nom");
+    MakeButtons();
+    UpdateMainPanel(beasts[0])
 }
 
+const MakeButtons = () => {
+    button_container.innerHTML = "";
+    beasts.forEach(beast => {
+        button_container.appendChild(MakeButton(beast));
+    })
+}
 
 // Retourne un bouton pour le monstre en argument.
 const MakeButton = (monster) => {
@@ -72,20 +76,20 @@ const MakeButton = (monster) => {
 
     container.onclick = () => {
         UpdateMainPanel(monster);
-    } 
+    }
 
     return container;
 }
 
 const main_panel = {
-    "image" : document.getElementById('main_image'),
-    "name" : document.getElementById('main_name'),
-    "description" : document.getElementById('spoiler_descr'),
-    "title" : document.getElementById('main_title'),
-    "stats" : document.getElementById('main_stats'),
-    "type" : document.getElementById('main_type'),
-    "rarity" : document.getElementById('main_rarity'),
-    "danger" : document.getElementById('main_dangerosity')
+    "image": document.getElementById('main_image'),
+    "name": document.getElementById('main_name'),
+    "description": document.getElementById('spoiler_descr'),
+    "title": document.getElementById('main_title'),
+    "stats": document.getElementById('main_stats'),
+    "type": document.getElementById('main_type'),
+    "rarity": document.getElementById('main_rarity'),
+    "danger": document.getElementById('main_dangerosity')
 }
 
 const UpdateMainPanel = (monster) => {
@@ -108,6 +112,70 @@ const UpdateMainPanel = (monster) => {
 
     main_panel.danger.innerText = monster.dangerosite ?? "Inconnue";
 
+}
+
+const Sort = (key) => {
+    console.log(key)
+    if (key == "rarete") {
+        beasts = beasts.sort((a, b) => { 
+            return RarityToInt[a.rarete.toLowerCase()] - RarityToInt[b.rarete.toLowerCase()]
+        })
+        return;
+    }
+    if (key == "dangerosite") {
+        console.log("Dangerous")
+        beasts = beasts.sort((a, b) => { 
+            return DangerousToInt[a.dangerosite.trim().toLowerCase()] - DangerousToInt[b.dangerosite.trim().toLowerCase()]
+        })
+        return;
+    }
+    beasts = beasts.sort((a, b) => a[key].localeCompare(b[key]))
+    console.log(beasts);
+}
+
+const filter = document.getElementById('filtre');
+
+filter.onchange = () => {
+    console.log("Changing filter by value : " + filter.value);
+
+    const changeFilter = (_filter) => {
+        Sort(_filter);
+        MakeButtons();
+    }
+
+    switch (parseInt(filter.value)) {
+        case 1:
+            console.log("test")
+            changeFilter("nom");
+            break;
+        case 2:
+            changeFilter("rarete");
+            break;
+        case 3:
+            changeFilter("dangerosite");
+            break;
+        case 4:
+            changeFilter("type");
+            break;
+        default:
+            console.log("Not working")
+            return;
+
+    }
+}
+
+const RarityToInt = {
+    "usuel" : 0,
+    "basique" : 1,
+    "épique" : 2,
+    "mythique" : 3
+}
+
+const DangerousToInt = {
+    "inoffensif" : 0,
+    "inconvénient" : 1,
+    "sinistre" : 2,
+    "désastre" : 3
 }
 
 Init();
