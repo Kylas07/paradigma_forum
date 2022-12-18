@@ -52,47 +52,6 @@ body {
   
 }
 
-/********** postbody **********/
-#wrapper {
-    position: relative;
-    margin: 20px auto 0px;
-    width: 100%;
-    min-width: 800px;
-  max-width: 1200px;
-  min-height:1000px;
-    box-sizing: border-box;
-    top: 0;
-  background:var(--fondforum);
-}
-
-#innerwrapper {
-  box-sizing: border-box;
-    position: relative;
-}
-
-
-
-.postrow_wrap {
-  width: 100%;
-    display: flex;
-    position: relative;
-    justify-content: center;
-}
-
-.body_message {
-  width: 80%;
-    height: auto;
-    margin: 20px auto 80px auto;
-font-family: 'Lato';
-font-style: normal;
-font-weight: 400;
-font-size: 15px;
-line-height: 185%;
-text-align: justify;
-  color:var(--colofont);
-color: #FFFFFF;
-}
-
 /***** post adm **************/
 
 .post_adm {
@@ -385,6 +344,7 @@ text-transform: lowercase;
     background: rgba(0 0 0 / 63%);
     display: flex;
     height: 100%;
+    font-size: 10px;
     color: var(--type);
     align-items: center;
     place-content: center;
