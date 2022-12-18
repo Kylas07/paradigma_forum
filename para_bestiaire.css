@@ -196,7 +196,7 @@ grid-column: 1/3;
     display: grid;
     grid-column: 2/2;
     position: absolute;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
     align-items: center;
     text-align: center;
     flex-direction: column;
@@ -205,7 +205,7 @@ grid-column: 1/3;
 
 .nom_monstre {
     display: grid;
-    grid-template-rows: 3fr 1fr 1fr;
+ grid-template-rows: 2fr 1fr 2fr;
     align-items: center;
 }
 
@@ -376,4 +376,11 @@ input:checked~span.talent:before {
     grid-row: 2/2;
     width: 100%;
     height: 4vw;
+}
+
+.spoiler_monstre div span.credits_bes {
+  float: right;
+  color: var(--maincolo2);
+    text-transform: lowercase;
+    font-style: italic;
 }
