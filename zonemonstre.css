@@ -1,3 +1,281 @@
+:root {
+  --fondforum: #0F0A0A;
+  --maincolo1:#1624B6;
+    --maincolo2:#F3C72B;
+  --colofont:rgba(245, 245, 245, 1);
+  --coloaccent:#5263F4;
+  --fondbleu:url('https://i.imgur.com/Qho21zU.jpg');
+    --domination:#F25353;
+  --hybris:#F29C6A;
+  --impartialite:#E6CC4C;
+  --erudition:#81E06E;
+  --loyaute:#40BD8B;
+  --inconstance:#5EC5EB;
+  --croyance:#547FE3;
+  --liberte:#7265D4;
+  --clemence:#AA53D6;
+  --passion:#E882AD;
+  
+  --feu:rgba(145 0 0);
+  --eau:rgba(0 61 145);
+  --vent:rgba(0 120 145);
+  --plante:rgba(49 145 0);
+  --electrique:rgba(255 188 0);
+    --tenebres:rgba(70 21 147);
+    --lumineux:rgba(255 255 255);
+    --mental:rgba(175 156 255 / 0.1);
+    --neutre:rgba(195 195 195);
+    --cristal:rgba(0 255 187);
+    --toxique:rgba(119 0 255);
+
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  background-color: rgba(195 195 195 / 0%);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--colofont);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar,
+::-webkit-scrollbar-thumb {
+  border: 5px solid rgba(195 195 195 / 0%);
+}
+
+body {
+  margin:auto;
+  background:var(--fondforum);
+  
+}
+
+/********** postbody **********/
+#wrapper {
+    position: relative;
+    margin: 20px auto 0px;
+    width: 100%;
+    min-width: 800px;
+  max-width: 1200px;
+  min-height:1000px;
+    box-sizing: border-box;
+    top: 0;
+  background:var(--fondforum);
+}
+
+#innerwrapper {
+  box-sizing: border-box;
+    position: relative;
+}
+
+
+
+.postrow_wrap {
+  width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+.body_message {
+  width: 80%;
+    height: auto;
+    margin: 20px auto 80px auto;
+font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 185%;
+text-align: justify;
+  color:var(--colofont);
+color: #FFFFFF;
+}
+
+/***** post adm **************/
+
+.post_adm {
+    margin: auto;
+    background-attachment: fixed;
+    padding: 50px;
+    font-size: 16px;
+    line-height: 160%;
+    text-align: justify;
+background-image: url(https://i.imgur.com/0MqLp4a.png);
+    border-radius: 5px;
+    height: fit-content;
+}
+
+
+.header_adm {
+      display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.header_adm:after {
+content: " ";
+    display: block;
+    height: 100px;
+    width: 1px;
+    background: #1b2025;
+    margin: 55px;
+}
+
+.post_adm .titre_adm {
+
+  
+}
+
+.post_adm tt1{   font-family: "Playfair Display";
+    font-size: 30px;
+    text-transform: lowercase;
+    color: var(--maincolo1);
+    margin-right: 10px;
+    text-align: -webkit-center;}
+
+.post_adm tt2{   font-family: "Playfair Display";
+    font-size: 30px;
+    text-transform: lowercase;
+    color: var(--maincolo2);
+    margin-right: 10px;
+    text-align: -webkit-center;}
+
+.titre_adm tt1 {
+      padding: 19px;
+  color:var(--fondforum);
+background:  linear-gradient(-30deg, var(--maincolo1) 0%,  var(--coloaccent) 50%, var(--maincolo2) 100%);
+}
+
+stt {
+  background-image: linear-gradient(30deg, var(--maincolo1) 0%,  var(--coloaccent) 50%, var(--maincolo2) 100%);
+  text-transform:uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 120%;
+    color: var(--fondforum);
+    padding: 30px;
+    outline: 1px solid #171717;
+    outline-offset: -15px;
+  display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 80px;
+    margin-inline-end: 80px;
+}
+
+haha:before {
+  content: '';
+    display: inline-block;
+    width: 100%;
+    height: 1px;
+     background: linear-gradient(30deg, var(--maincolo1) 0%,  var(--coloaccent) 50%, var(--maincolo2) 100%);
+}
+
+haha {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding: 0;
+}
+
+haha:after {
+  content: '';
+    display: inline-block;
+    width: 100%;
+    height: 1px;
+     background: linear-gradient(30deg, var(--maincolo2) 0%,  var(--coloaccent) 50%, var(--maincolo1) 100%);
+}
+.haha {
+  padding: 10px 20px;
+      display: flex;
+  flex-shrink: 0;
+    align-items: center;
+    max-width: 70%;}
+
+hh1 {background:var(--maincolo1);
+color:var(--colofont);
+  font-style:normal;
+    margin:0 1px;
+    font-size:12px;
+      border-radius: 2px;
+padding: 2px 4px;}
+
+hh2 {background:var(--maincolo2);
+color:var(--fondforum);
+  font-style:normal;
+    font-size:12px;
+  margin:0 1px;
+      border-radius: 2px;
+padding: 2px 4px;}
+
+.postfond_adm {
+  padding:50px;
+  background:rgba(17 17 17 / 1);
+}
+
+.titre_adm {
+  place-items: center;
+  padding: 20px 10px;
+    display: grid;
+    grid-column-gap: 10px;
+    grid-template-columns: 2fr auto;
+}
+ 
+.intro_adm {
+    position: relative;
+    margin: 20px 100px;
+    padding: 15px;
+    background: rgba(22 22 25);
+    color: #a2a2a9;
+}
+
+
+
+.img_annexe { 
+    margin: 10px auto 20px auto;
+    border: 10px solid rgba(32 32 32);
+    height: 300px;
+    padding: 10px;}
+
+.img_annexe img {
+width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.heyo_annexe:hover {
+      background-color: var(--fondforum);
+    color: var(--maincolo2);
+    transition:0.5s ease;
+}
+
+.heyo_annexe {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 12px!important;
+    position: absolute;
+    margin-top: -25px;
+    margin-left: -70px;
+    padding: 2px 5px;
+    width: 180px;
+    height: 30px;
+  transition:0.5s ease;
+    background-color: var(--maincolo2);
+    color: var(--fondforum);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/***************************/
+
 .container_zone {
 overflow: hidden;
     margin-top: 35px;
@@ -37,6 +315,7 @@ overflow: hidden;
 }
 
 .zone-btn.active {
+  transform:scale(1.1);
   background-color: black;
   text-decoration:underline;
     transition:1s ease;
@@ -45,7 +324,7 @@ overflow: hidden;
 stremon {
   border: 0px;
     width: 220px;
-background: linear-gradient(270deg, rgba(175 156 255 / 0.1) 8.53%, var(--type) 74.41%);
+background: linear-gradient(270deg, var(--type2) 8.53%, var(--type) 74.41%);
   border-radius:5px;
     height: 120px;
     display: flex;
@@ -80,8 +359,18 @@ appelation {
     position: relative;
     text-transform: uppercase;
     font-family: 'lato';
+    color: black;
+  font-style: italic;
     font-weight: 700;
+  transition: .5s ease;
 }
+
+appelation:hover {
+     color:white;
+    letter-spacing: 1.2px;
+    transition: .5s all ease;
+} 
+
 info_stremon {
       display: grid;
     grid-template-rows: 1fr 1fr;
@@ -93,13 +382,20 @@ info_stremon {
 
 info_stremon  > span:first-of-type {
 text-transform: lowercase;
-    background: rgb(0 0 0 / 63%);
+    background: rgba(0 0 0 / 63%);
     display: flex;
     height: 100%;
     color: var(--type);
     align-items: center;
     place-content: center;
     border-radius: 10px;
+    transition: .5s ease;
+}
+
+info_stremon > span:first-of-type:hover {
+  background:var(--type);
+    color:rgba(0 0 0 / 63%);
+  transition: .5s ease;
 }
 
 info_stremon  > span:nth-of-type(2) {
@@ -108,8 +404,15 @@ info_stremon  > span:nth-of-type(2) {
     background: var(--type);
     display: flex;
     height: 100%;
-    color: rgb(0 0 0 / 63%);
+    color: rgba(0 0 0 / 63%);
     align-items: center;
     place-content: center;
     border-radius: 10px;
+    transition: .5s ease;
+}
+
+info_stremon > span:nth-of-type(2):hover {
+ color:var(--type);
+      background:rgba(0 0 0 / 63%);
+  transition: .5s ease;
 }
