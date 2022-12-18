@@ -47,6 +47,7 @@ body {
     font-size: 1vw;
     border-radius: 5px;
     height: 98vh;
+    overflow:hidden;
 }
 
 .para_bestiaire section {
