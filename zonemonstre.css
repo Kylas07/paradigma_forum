@@ -240,7 +240,7 @@ padding: 2px 4px;}
 .img_annexe { 
     margin: 10px auto 20px auto;
     border: 10px solid rgba(32 32 32);
-    height: 300px;
+    display: flex;
     padding: 10px;}
 
 .img_annexe img {
