@@ -82,14 +82,15 @@ const MakeButton = (monster) => {
 }
 
 const main_panel = {
-    "image": document.getElementById('main_image'),
-    "name": document.getElementById('main_name'),
-    "description": document.getElementById('spoiler_descr'),
-    "title": document.getElementById('main_title'),
-    "stats": document.getElementById('main_stats'),
-    "type": document.getElementById('main_type'),
-    "rarity": document.getElementById('main_rarity'),
-    "danger": document.getElementById('main_dangerosity')
+    "image" : document.getElementById('main_image'),
+    "name" : document.getElementById('main_name'),
+    "description" : document.getElementById('spoiler_descr'),
+    "title" : document.getElementById('main_title'),
+    "stats" : document.getElementById('main_stats'),
+    "type" : document.getElementById('main_type'),
+    "rarity" : document.getElementById('main_rarity'),
+    "danger" : document.getElementById('main_dangerosity'),
+    "credit" : document.getElementById('main_credits')
 }
 
 const UpdateMainPanel = (monster) => {
@@ -111,7 +112,7 @@ const UpdateMainPanel = (monster) => {
     main_panel.rarity.innerText = monster.rarete.toUpperCase() ?? "Inconnue";
 
     main_panel.danger.innerText = monster.dangerosite ?? "Inconnue";
-
+    main_panel.credit.innerText = (monster.competence ? `credits : ` : '') + (monster.competence ?? '')
 }
 
 const Sort = (key) => {
