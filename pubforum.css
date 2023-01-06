@@ -2,9 +2,7 @@
 body {
   margin:auto;
 display: grid;
-    justify-content: center;
-  background:var(--fondforum);
-  
+    justify-content: center;  
 }
 
 
@@ -94,88 +92,6 @@ display: grid;
   border-radius: 10px;
 }
 /***** post adm **************/
-
-.post_adm {
-margin: auto;
-    padding: 50px;
-    font-size: 16px;
-    line-height: 160%;
-    text-align: justify;
-    background: url(https://i.imgur.com/V1QeSwx.png);background-size:cover;
-    border-radius: 5px;
-    height: fit-content;
-}
-.Adomination{background: linear-gradient(270deg, rgba(153,16,16,0.6) 0%, rgba(242,83,83,0.4) 50%), url('https://i.imgur.com/V1QeSwx.png');}
-.Ahybris{background: linear-gradient(270deg, rgba(153,66,16,0.6) 0%, rgba(242,156,106,0.4) 50%), url('https://i.imgur.com/V1QeSwx.png');}
-.Aimpartialite{background: linear-gradient(270deg, rgba(153,128,16,0.6) 0%, rgba(230,204,76,0.4) 50%), url('https://i.imgur.com/V1QeSwx.png');}
-.Aerudition{background: linear-gradient(270deg, rgba(67,153,16,0.6) 0%, rgba(129,224,110,0.4) 50%), url('https://i.imgur.com/V1QeSwx.png');}
-.Aloyaute{background: linear-gradient(270deg, rgba(16,153,87,0.6) 0%, rgba(64,189,139,0.4) 50%), url('https://i.imgur.com/V1QeSwx.png');}
-.Ainconstance{background: linear-gradient(270deg, rgba(16,145,153,0.6) 0%, rgba(94,197,235,0.4) 50%), url('https://i.imgur.com/V1QeSwx.png');}
-.Acroyance{background: linear-gradient(270deg, rgba(16,53,153,0.6) 0%, rgba(84,127,227,0.4) 50%), url('https://i.imgur.com/V1QeSwx.png');}
-.Aliberte{background: linear-gradient(270deg, rgba(62,16,153,0.6) 0%, rgba(114,101,212,0.4) 50%), url('https://i.imgur.com/V1QeSwx.png');}
-.Aclemence{background: linear-gradient(270deg, rgba(89,19,99,0.6) 0%, rgba(170,83,214,0.4) 50%), url('https://i.imgur.com/V1QeSwx.png');}
-.Apassion{background: linear-gradient(270deg, rgba(153,16,79,0.6) 0%, rgba(232,130,173,0.4) 50%), url('https://i.imgur.com/V1QeSwx.png');}
-
-
-	@keyframes cabougeohlalal {
-			
-		0% {
-			transform:translateY(10px);
-		}
-		100% {
-			transform:translateY(15px);
-		}
-	} 
-  
-tteur {display:block;font-family: 'Playfair Display';font-weight: 600;font-size: 28px;letter-spacing:12px; text-transform:lowercase;
-  animation-name: cabougeohlalal;
-		animation-duration: 1s;
-		animation-timing-function: ease;
-		animation-delay: 0s;
-		animation-iteration-count: infinite;
-		animation-direction: alternate-reverse;
-		animation-fill-mode: both;
-}
-
-.header_adm {
-      display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 10px;
-}
-
-.header_adm:after {
-content: " ";
-    display: block;
-    height: 100px;
-    width: 1px;
-    background: #1b2025;
-    margin: 55px;
-}
-
-.post_adm .titre_adm {
-}
-
-.post_adm tt1{   font-family: "Playfair Display";
-    font-size: 30px;
-    text-transform: lowercase;
-    color: var(--coloaccent);
-    margin-right: 10px;
-    text-align: -webkit-center;}
-
-.post_adm tt2{   font-family: "Playfair Display";
-    font-size: 30px;
-    text-transform: lowercase;
-    color: var(--maincolo2);
-    margin-right: 10px;
-    text-align: -webkit-center;}
-
-.titre_adm tt1 {
-      padding: 19px;
-  color:var(--fondforum);
-background:  linear-gradient(-30deg, var(--coloaccent) 0%,  var(--coloaccent) 50%, var(--maincolo2) 100%);
-}
 
 stt {
   background-image: linear-gradient(30deg, var(--coloaccent) 0%,  var(--coloaccent) 50%, var(--maincolo2) 100%);
@@ -353,29 +269,6 @@ border-bottom: 2px solid var(--groupe);
     text-transform: lowercase;
 }
 
-titrecity { font-family: "Playfair Display";
-    font-size: 30px;
-    text-transform: lowercase;
-    color: var(--citycolo);
-    margin-right: 10px;
-    text-align: -webkit-center;}
-
-hcity {background:var(--citycolo);
-color:var(--fondforum);
-  font-style:normal;
-    margin:0 1px;
-    font-size:12px;
-      border-radius: 2px;
-padding: 2px 4px;}
-
-icity {color:var(--citycolo);
-  font-style:italic;}
-ucity {border-bottom: 1px solid var(--citycolo);
-    padding: 2px 4px;
-    background-color: #171717;}
-bcity {  color:var(--citycolo);
-  font-weight:bold;}
-
 /**********/
 
 .intervention_adm {
@@ -540,6 +433,7 @@ display: grid;
   display: flex!important;
     position: relative;
   background-color:#161616;
+	border-radius: 10px
 }
 
 .conteneur_pub > span {
